@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://revivalschool.edu.pk/sitemap.xml

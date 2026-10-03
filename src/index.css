@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-arabic {
+    font-family: 'Amiri', serif;
+  }
+}
+
+@layer utilities {
+  /* Custom glassmorphism and gradient cards matching reference */
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .bg-glass-navy {
+    background: linear-gradient(135deg, rgba(6, 40, 85, 0.95) 0%, rgba(3, 23, 51, 0.98) 100%);
+    backdrop-filter: blur(16px);
+  }
+
+  /* Reference gold double line badge */
+  .badge-gold {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #cc7d16;
+  }
+
+  .badge-gold::before,
+  .badge-gold::after {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 1.5px;
+    background-color: #e59a20;
+  }
+
+  /* Card image zoom effect on hover */
+  .image-zoom-container {
+    overflow: hidden;
+  }
+
+  .image-zoom-container img {
+    transition: transform 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+  }
+
+  .image-zoom-container:hover img {
+    transform: scale(1.05);
+  }
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
