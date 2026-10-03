@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, GraduationCap, MapPin } from 'lucide-react';
-import { NAVIGATION_LINKS, CAMPUS_INFO } from '../../data/navigation';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { NAVIGATION_LINKS } from '../../data/navigation';
 import { IMAGES } from '../../data/images';
 import { Button } from '../ui/Button';
 import { MobileMenu } from './MobileMenu';
@@ -9,7 +9,7 @@ import { MobileMenu } from './MobileMenu';
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [, setActiveDropdown] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -34,15 +34,14 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-md py-2.5 border-b border-slate-100'
-            : 'bg-white/90 backdrop-blur-sm py-3.5 border-b border-slate-200/50'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-md py-2.5 border-b border-slate-100'
+          : 'bg-white/90 backdrop-blur-sm py-3.5 border-b border-slate-200/50'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
-            
+
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 shrink-0 group">
               <img
@@ -63,7 +62,7 @@ export const Navbar: React.FC = () => {
             {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
               {NAVIGATION_LINKS.map((item) => {
-                const isActive = location.pathname === item.href || 
+                const isActive = location.pathname === item.href ||
                   (item.href !== '/' && location.pathname.startsWith(item.href));
                 const hasChildren = item.children && item.children.length > 0;
 
@@ -76,11 +75,10 @@ export const Navbar: React.FC = () => {
                   >
                     <Link
                       to={item.href}
-                      className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 ${
-                        isActive
-                          ? 'text-brand-blue-600 bg-brand-blue-50/80 font-bold'
-                          : 'text-slate-700 hover:text-brand-blue-600 hover:bg-slate-50'
-                      }`}
+                      className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
+                        ? 'text-brand-blue-600 bg-brand-blue-50/80 font-bold'
+                        : 'text-slate-700 hover:text-brand-blue-600 hover:bg-slate-50'
+                        }`}
                     >
                       <span>{item.name}</span>
                       {hasChildren && (

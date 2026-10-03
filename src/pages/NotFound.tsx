@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Home, ArrowLeft } from 'lucide-react';
+import { Home } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { SEO } from '../components/ui/SEO';
 import { IMAGES } from '../data/images';
@@ -12,7 +11,7 @@ export const NotFound: React.FC = () => {
       <main className="min-h-[75vh] flex items-center justify-center py-24 px-4 bg-[#f8fafd]">
         <div className="max-w-md w-full text-center space-y-6 bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-xl">
           <img src={IMAGES.logo} alt="Revival Crest" className="w-20 h-auto mx-auto opacity-80" />
-          
+
           <div className="space-y-2">
             <span className="text-4xl sm:text-5xl font-serif font-bold text-brand-blue-600 block">404</span>
             <h1 className="text-2xl font-serif font-bold text-brand-navy-900">Page Not Found</h1>

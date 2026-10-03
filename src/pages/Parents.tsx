@@ -4,7 +4,7 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { TestimonialsSection } from '../components/sections/TestimonialsSection';
 import { SEO } from '../components/ui/SEO';
-import { MessageSquare, Calendar, ShieldCheck, Users, FileText, Bell, Phone, CheckCircle2 } from 'lucide-react';
+import { Calendar, Users, Bell, CheckCircle2 } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const Parents: React.FC = () => {

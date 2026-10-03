@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { GalleryItem } from '../../types';
 
 interface LightboxModalProps {
@@ -83,7 +83,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       )}
 
       {/* Content Container */}
-      <div 
+      <div
         className="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center justify-center"
         onClick={(e) => e.stopPropagation()}
       >

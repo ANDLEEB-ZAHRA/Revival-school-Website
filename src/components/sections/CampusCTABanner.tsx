@@ -1,7 +1,6 @@
 import React from 'react';
-import { ArrowRight, Building2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/Button';
-
 interface CampusCTABannerProps {
   buttonText?: string;
   buttonLink?: string;
@@ -14,15 +13,15 @@ export const CampusCTABanner: React.FC<CampusCTABannerProps> = ({
   return (
     <section className="py-12 bg-[#f8fafd] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Banner Container matching reference design */}
         <div className="bg-gradient-to-r from-brand-blue-600 via-brand-blue-700 to-brand-blue-800 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
-          
+
           {/* Subtle Decorative Pattern */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-            
+
             {/* Left Column: Title & CTA */}
             <div className="lg:col-span-7 space-y-4 text-left">
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-brand-gold-300">

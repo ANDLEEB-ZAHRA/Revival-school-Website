@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Quote, Users } from 'lucide-react';
+import { Star, Users } from 'lucide-react';
 import { SectionHeader } from '../ui/SectionHeader';
 import { TESTIMONIALS_DATA } from '../../data/testimonials';
 import { IMAGES } from '../../data/images';
@@ -9,15 +9,15 @@ export const TestimonialsSection: React.FC = () => {
 
   return (
     <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-[#f3f7fd] via-[#eef5fc] to-[#f8fafd]">
-      
+
       {/* Background Students Reading Watermark Layer */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.08] pointer-events-none mix-blend-multiply select-none"
         style={{ backgroundImage: `url(${IMAGES.earlyYearsReading})` }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <SectionHeader
           badge="TESTIMONIALS"
@@ -28,7 +28,7 @@ export const TestimonialsSection: React.FC = () => {
 
         {/* 4 Cards Row (3 Testimonials + 1 Photo Badge Card) matching reference */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
-          
+
           {displayedTestimonials.map((item) => (
             <div
               key={item.id}

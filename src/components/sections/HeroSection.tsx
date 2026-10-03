@@ -1,14 +1,14 @@
 import React from 'react';
-import { ArrowRight, Sparkles, Award, BookOpen, Trophy } from 'lucide-react';
+import { ArrowRight, Award, BookOpen, Trophy } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { IMAGES } from '../../data/images';
 
 export const HeroSection: React.FC = () => {
   return (
     <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-b from-[#eaf2fb] via-[#f3f7fd] to-[#f8fafd]">
-      
+
       {/* Background Subtle Assembly / Building Image Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.14] pointer-events-none mix-blend-luminosity select-none"
         style={{ backgroundImage: `url(${IMAGES.assemblyPanorama})` }}
       />
@@ -19,9 +19,9 @@ export const HeroSection: React.FC = () => {
 
       {/* Top Floating Arabic Calligraphy Capsule */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <div className="flex flex-col items-center text-center">
-          
+
           {/* Rabbi Zidni Ilma Pill */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-brand-gold-300/70 shadow-sm backdrop-blur-md mb-4 animate-fadeIn">
             <span className="text-sm font-arabic font-bold text-brand-gold-700 tracking-wider">
@@ -77,7 +77,7 @@ export const HeroSection: React.FC = () => {
 
         {/* 3 Floating Blue Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mt-4">
-          
+
           {/* Card 1: Qualified Faculty */}
           <div className="bg-gradient-to-r from-brand-blue-700 to-brand-blue-600 rounded-2xl p-6 text-white shadow-lg border border-brand-blue-400/30 hover:-translate-y-1 transition-transform duration-300">
             <div className="flex items-center gap-3 mb-2.5">

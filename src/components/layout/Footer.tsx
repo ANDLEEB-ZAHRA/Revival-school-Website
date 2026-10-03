@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { CAMPUS_INFO } from '../../data/navigation';
 import { IMAGES } from '../../data/images';
 
@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-slate-700/60">
-          
+
           {/* Brand & Crest Column */}
           <div className="lg:col-span-4 space-y-4">
             <Link to="/" className="inline-flex items-center gap-3 group">
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                 </p>
               </div>
             </Link>
-            
+
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm pt-2">
               Dedicated to nurturing young minds with academic rigor, Islamic values, discipline, and modern pedagogical excellence under the Revival Education System.
             </p>

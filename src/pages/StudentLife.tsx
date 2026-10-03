@@ -4,8 +4,7 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { SEO } from '../components/ui/SEO';
 import { IMAGES } from '../data/images';
-import { Clock, Shield, Sparkles, Trophy, Users, HeartHandshake, CheckCircle2 } from 'lucide-react';
-import { Button } from '../components/ui/Button';
+
 
 export const StudentLife: React.FC = () => {
   return (

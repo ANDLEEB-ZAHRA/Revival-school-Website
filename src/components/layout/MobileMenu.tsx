@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { X, ChevronDown, Phone, MapPin, Mail, ArrowRight } from 'lucide-react';
+import { X, ChevronDown, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { NavItem } from '../../types';
 import { CAMPUS_INFO } from '../../data/navigation';
 import { IMAGES } from '../../data/images';
@@ -29,14 +29,14 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
   return (
     <div className="fixed inset-0 z-50 lg:hidden">
       {/* Backdrop */}
-      <div 
+      <div
         className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"
         onClick={onClose}
       />
 
       {/* Drawer */}
       <div className="fixed inset-y-0 right-0 max-w-sm w-full bg-white shadow-2xl z-50 flex flex-col overflow-y-auto animate-slideLeft">
-        
+
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-slate-100">
           <div className="flex items-center gap-2.5">
@@ -69,11 +69,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                     onClick={() => {
                       if (!hasChildren) onClose();
                     }}
-                    className={`flex-1 py-2.5 px-3 rounded-lg text-sm font-semibold transition-colors ${
-                      isActive
+                    className={`flex-1 py-2.5 px-3 rounded-lg text-sm font-semibold transition-colors ${isActive
                         ? 'bg-brand-blue-50 text-brand-blue-700 font-bold'
                         : 'text-slate-700 hover:bg-slate-50 hover:text-brand-blue-600'
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </Link>

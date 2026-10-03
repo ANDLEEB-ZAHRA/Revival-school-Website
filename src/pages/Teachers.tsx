@@ -5,7 +5,7 @@ import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { SEO } from '../components/ui/SEO';
 import { FACULTY_DATA } from '../data/faculty';
 import { IMAGES } from '../data/images';
-import { Award, GraduationCap, Briefcase, Mail, CheckCircle2 } from 'lucide-react';
+import { Award, GraduationCap, Briefcase } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const Teachers: React.FC = () => {

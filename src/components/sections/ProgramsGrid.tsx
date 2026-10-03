@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { SectionHeader } from '../ui/SectionHeader';
 import { ACADEMIC_PROGRAMS } from '../../data/programs';
-import { IMAGES } from '../../data/images';
 
 export const ProgramsGrid: React.FC = () => {
   return (
     <section className="py-16 md:py-24 bg-[#f8fafd] relative overflow-hidden">
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header with watermark */}
         <SectionHeader
           badge="ACADEMICS"

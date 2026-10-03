@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PageHero } from '../components/ui/PageHero';
-import { SectionHeader } from '../components/ui/SectionHeader';
 import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { SEO } from '../components/ui/SEO';
 import { Button } from '../components/ui/Button';
 import { ACADEMIC_PROGRAMS } from '../data/programs';
-import { CheckCircle2, ArrowRight, BookOpen, Clock, Users, Award } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const Programs: React.FC = () => {
   const location = useLocation();
