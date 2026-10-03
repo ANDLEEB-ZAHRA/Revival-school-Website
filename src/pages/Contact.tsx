@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MapPin, Clock, Send, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
+import { Phone, MapPin, Clock, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
 import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
 import { CampusCTABanner } from '../components/sections/CampusCTABanner';

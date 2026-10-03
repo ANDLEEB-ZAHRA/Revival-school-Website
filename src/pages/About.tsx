@@ -4,7 +4,7 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { SEO } from '../components/ui/SEO';
 import { IMAGES } from '../data/images';
-import { ShieldCheck, Target, Compass, Heart, Award, CheckCircle2, Building, Sparkles } from 'lucide-react';
+import { ShieldCheck, Target, Compass, Heart, Award, CheckCircle2 } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (

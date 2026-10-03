@@ -5,7 +5,7 @@ import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { SEO } from '../components/ui/SEO';
 import { ACTIVITIES_DATA, EXTRA_ACTIVITIES_LIST } from '../data/activities';
 import { IMAGES } from '../data/images';
-import { CheckCircle2, Trophy, Award, Palette, Mic, BookOpen, FlaskConical, Leaf, Laptop } from 'lucide-react';
+import { CheckCircle2, Trophy, Palette, Mic, BookOpen, FlaskConical, Leaf, Laptop } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const Activities: React.FC = () => {

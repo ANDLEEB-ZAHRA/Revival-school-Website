@@ -4,7 +4,7 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { ProgramsGrid } from '../components/sections/ProgramsGrid';
 import { SEO } from '../components/ui/SEO';
-import { BookOpen, GraduationCap, CheckCircle2, Award, Users, Lightbulb, Compass, FileCheck } from 'lucide-react';
+import { GraduationCap, CheckCircle2, Lightbulb, FileCheck } from 'lucide-react';
 import { IMAGES } from '../data/images';
 import { Button } from '../components/ui/Button';
 

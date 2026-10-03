@@ -7,16 +7,12 @@ import { SEO } from '../components/ui/SEO';
 import { FAQS_DATA } from '../data/faqs';
 import { AdmissionFormData } from '../types';
 import { 
-  FileText, 
   CheckCircle2, 
   ClipboardList, 
-  UserCheck, 
-  CreditCard, 
   Calendar, 
   AlertCircle, 
   ChevronDown, 
   ChevronUp, 
-  Sparkles,
   ArrowRight
 } from 'lucide-react';
 

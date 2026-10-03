@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { PageHero } from '../components/ui/PageHero';
-import { SectionHeader } from '../components/ui/SectionHeader';
 import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { SEO } from '../components/ui/SEO';
 import { FAQS_DATA } from '../data/faqs';
-import { ChevronDown, ChevronUp, HelpCircle, MessageSquare } from 'lucide-react';
+import { ChevronDown, ChevronUp, MessageSquare } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const FAQ: React.FC = () => {

@@ -5,7 +5,7 @@ import { CampusCTABanner } from '../components/sections/CampusCTABanner';
 import { SEO } from '../components/ui/SEO';
 import { Button } from '../components/ui/Button';
 import { IMAGES } from '../data/images';
-import { Sparkles, Heart, Smile, CheckCircle2, Award, Clock, ArrowRight } from 'lucide-react';
+import { Sparkles, Heart, Smile, CheckCircle2, Clock, ArrowRight } from 'lucide-react';
 
 export const Montessori: React.FC = () => {
   return (

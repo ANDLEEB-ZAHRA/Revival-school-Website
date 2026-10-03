@@ -34,7 +34,7 @@ export const Events: React.FC = () => {
             />
 
             <div className="space-y-8">
-              {SCHOOL_EVENTS.map((event, index) => (
+              {SCHOOL_EVENTS.map((event) => (
                 <div
                   key={event.id}
                   className="bg-[#f8fafd] rounded-3xl overflow-hidden border border-slate-200/90 shadow-card hover:shadow-card-hover transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 group"
